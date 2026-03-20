@@ -50,6 +50,7 @@ def load_market_data(file_path: str) -> pd.DataFrame:
     
     try:
         df = pd.read_csv(file_path, low_memory=False)
+        df = df.rename(columns={'Symbol': 'Ticker'})
 
         logger.info(f"Loaded CSV with {len(df)} rows")
     except Exception as e:
