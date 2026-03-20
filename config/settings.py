@@ -56,7 +56,7 @@ class Config:
         Sets all configuration attributes to their default values and logs
         the initialization.
         """
-        self.DATA_PATH = "data/raw.csv"
+        self.DATA_PATH = "data/stocks/NIFTY50_all.csv"
         self.MODEL_DIR = "saved_models"
         self.TEST_SIZE = 0.2
         self.RANDOM_STATE = 42
